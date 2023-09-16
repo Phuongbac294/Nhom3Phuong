@@ -1,0 +1,29 @@
+.navigate {
+    height: var(--navigate-height);
+    background-color: var(--navigate-color);
+    justify-content: space-between;
+    align-items: center;
+}
+.navigate_menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    overflow: hidden;
+    
+}
+.navigate_menu-item {
+    min-width: 100px;
+    height: var(--navigate-height);
+    text-align: center;
+    line-height: var(--navigate-height);
+    cursor: pointer;
+}
+.navigate_menu-item:hover {
+    background-color: var(--hover-color-red);
+}
+.navigate_menu-item-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--navigate-text-color);
+}

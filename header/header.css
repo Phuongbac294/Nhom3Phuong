@@ -1,0 +1,53 @@
+.header {
+    height: var(--height-header);
+    /* background-color: var(--background-color-black); */
+    background-image: var(--linear-gradient);
+    color: var(--text-color-white);
+    font-size: 2rem;
+
+}
+
+.header_logo {
+    width: var(--height-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_logo-img {
+    display: block;
+    width: calc(var(--height-header) - 10px);
+    height: calc(var(--height-header) - 10px);
+    border-radius: 50%;
+    object-fit: cover;
+    animation: xoaytron 20s infinite 0s;
+    /* animation:  scale 20s infinite 0s; */
+    
+}
+.header_slogan {
+    flex: 1;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: var(--height-header);
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+}
+.header_slogan-title {
+    background-image: var(--text-color-white);
+    text-transform: uppercase;
+    display: block;
+    position: relative;    
+    animation: move_right_left 20s ;
+    animation: doiMau 1s infinite;
+}
+
+@keyframes move_right_left {
+    from { right: -100vh;opacity: 0; color: blue;}
+    to { right: 0px; opacity: 1; color: white;}
+}
+
+@keyframes doiMau {
+    from { color : rgb(225, 32, 231)}
+    50% { color: blue}
+    to{color: rgb(225, 32, 231)}
+}

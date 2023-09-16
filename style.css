@@ -1,0 +1,70 @@
+:root {
+    --text-color-white: #fff;
+    --text-color-black: #000;
+    --text-color-red: red;
+    --text-color-green: green;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-red: red;
+    --background-color-white: #fff;
+    --background-color-black: #000;
+    --height-header: 70px;
+    --height-footer: 120px;
+    --linear-gradient: linear-gradient(30deg, red, yellow);
+    --radial-gradient: -webkit-radial-gradient(green 5%, yellow 15%, blue 60%);
+    --navigate-color: rgba(32, 31, 31, 0.9);
+    --navigate-height: 30px;
+    --navigate-text-color: rgb(241, 36, 190);
+    --hover-color-red: rgba(195, 86, 238, 0.5);
+
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 80vw;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+}
+
+.input {
+    font-size: 1.6rem;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    padding-left: 5px;
+}
+.hide {
+    display: none;
+}
+
+
+@keyframes xoaytron {
+    from{   transform: rotateZ(0deg)}
+    to {    transform: rotateZ(360deg)}   
+}
+
+@keyframes scale {
+    from {transform: scale(100%);}
+    50% {transform: scale(25%)}
+    to {transform: scale(100%)}
+}
+
